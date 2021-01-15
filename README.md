@@ -13,7 +13,7 @@ Can automatically solve a word blitz game. To run the program execute the follow
 If you want to keep your python install independent of any dependencies in this project, you can install a virtual environment.
 1. Go to the directory of this project.
 2. Create virtual environment by running```virtualenv venv```.
-3. Activate the virtual environment by running ```venv/Scripts/activate``` on Windows or ````source venv/bin/activate``` on Unix.
+3. Activate the virtual environment by running ```venv/Scripts/activate``` on Windows or ```source venv/bin/activate``` on Unix.
 4. Once inside the virtual environment, run step 3 in installation.
 
 ## Informations

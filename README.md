@@ -16,8 +16,10 @@ If you want to keep your python install independent of any dependencies in this 
 3. Activate the virtual environment by running ```venv/Scripts/activate``` on Windows or ````source venv/bin/activate``` on Unix.
 4. Once inside the virtual environment, run step 3 in installation.
 
-## Running
+## Informations
 This script is designed for a game on a 1920*1080 screen.
+If you need to change, go to [networkx_functions#L53](https://github.com/AlexLaur/word_blitz_solver/blob/137de13c3621e99b6f43f0958212d1c2ced509e0/libs/networkx_functions.py#L53) and change the value of the offset.
+## Running
 ```python word_blitz_view```
 
 ## How it works

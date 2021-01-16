@@ -26,6 +26,7 @@
 # SOFTWARE.
 
 import os
+import time
 from PySide2 import QtGui, QtCore, QtWidgets
 
 from ui import word_blitz_solver_ui as main_ui
@@ -94,6 +95,7 @@ class WordBlitzSolver(QtWidgets.QMainWindow, main_ui.Ui_MainWindow):
         # Give the graph to the tracer
         self.tracer.set_graph(graph=self.current_game.graph)
 
+        self.start_time = time.time()
         self.words_found = []
         self.solver.run(
             graph=self.current_game.graph,
@@ -136,7 +138,10 @@ class WordBlitzSolver(QtWidgets.QMainWindow, main_ui.Ui_MainWindow):
         path = result.get("path", None)
         if word not in self.words_found:
             self.words_found.append(word)
-            self.tracer.trace(sequence=path)
+            if (time.time() - self.start_time) <= 60:
+                self.tracer.trace(sequence=path)
+            else:
+                print("time elapsed")
             print(word, path)
 
 

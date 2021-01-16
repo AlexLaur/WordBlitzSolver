@@ -4,6 +4,8 @@
 
 Can automatically solve a word blitz game. To run the program execute the following command.
 
+## Demo
+[<img src="https://img.youtube.com/vi/H5c1dgYRjlw/maxresdefault.jpg" width="50%">](https://www.youtube.com/watch?v=H5c1dgYRjlw>)
 ## Installation
 1. You will need a install of python3.x.
 2. Download this source code by cloning the master branch, or downloading.
